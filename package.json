@@ -1,0 +1,11 @@
+{
+    "name": "nightbot-api",
+    "description": "API for Nightbot custom commands",
+    "version": "0.0.1",
+    "private": true,
+    "license": "MIT",
+    "author": "Majestic MoonMoon",
+    "scripts": {
+        "start": "node index.js"
+    }
+}
