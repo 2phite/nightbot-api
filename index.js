@@ -1,6 +1,9 @@
-var http = require('http');
+// Append timestamps to log messages
+const moment = require("moment");
+require("console-stamp")(console, {formatter: () => { return moment().utcOffset('+0800').format("YYYY-MM-DD HH:mm:ss ZZ"); }});
 
 // Routing
+var http = require('http');
 var server = http.createServer(function(request, response) {
 	// console.log(request);
 	console.log("%s %s %s", request.method, request.headers.host, request.url);
